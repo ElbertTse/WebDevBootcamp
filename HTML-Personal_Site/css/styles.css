@@ -1,0 +1,55 @@
+body{
+    background-color: #f0f5f9;
+}
+
+hr{
+    border-style: dotted none none none;
+    height: 0px;
+    width: 10%;
+    border-color: grey;
+    border-width: 5px;
+}
+
+h1{
+    color: #1e2022;
+}
+
+h3{
+    color: #1e2022;
+}
+
+/* class selector example
+
+.bacon{
+
+}
+
+classes are space delimited and elements can be part of multiple classes.
+
+ex:
+<img class = "bacon circular"... >
+
+then these selectors affect the element above
+
+.bacon{}
+.circular{}
+
+*/
+/*
+id selector example
+    id can only be used for single elements. cant have 2 elements with same id
+    also, elements can only have one id
+
+
+#heading{
+}
+
+*/
+
+/*
+
+pseudo classes are as follows
+
+img :hover{}
+
+:hover is a pseudoclass that takes effect when cursor hovers over it.
