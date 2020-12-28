@@ -18,6 +18,13 @@ h1{
     line-height: 1.5;
 }
 
+h2{
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
 /* Navbar stuff*/
 
 .navbar{
@@ -49,11 +56,20 @@ h1{
 /* Title image */
 
 .title-image{
+    position: relative;
+    left: 120px;
+    top: 150px;
     width: 60%;
     transform: rotate(25deg);
 }
 
 /* Features */
+#features{
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
 
 .feature-item{
     text-align: center;
@@ -77,4 +93,50 @@ h1{
 }
 .feature-desc{
     color: #8f8f8f;
+}
+
+/* testimonials */
+
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.testimonial-img{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* press */
+
+#press{
+    text-align: center;
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* cards */
+
+.card{
+    text-align: center;
+}
+
+#pricing{
+    padding: 100px;
+}
+
+.pricing-column{
+    padding: 3% 2%;
 }
