@@ -8,7 +8,7 @@ body{
 }
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1{
@@ -56,11 +56,11 @@ h2{
 /* Title image */
 
 .title-image{
-    position: relative;
-    left: 120px;
-    top: 150px;
-    width: 60%;
+    height: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 25%;
+    top: 20%;
 }
 
 /* Features */
@@ -139,4 +139,16 @@ h2{
 
 .pricing-column{
     padding: 3% 2%;
+}
+
+@media (max-width: 1028px){
+
+    #title{
+        text-align: center;
+    }
+    
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
 }
