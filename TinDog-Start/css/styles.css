@@ -1,29 +1,57 @@
 body{
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
-#title{
+/* multiple selectors */
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+/* sections */
+.colored-section{
     background-color: #ff4c68;
     color: white;
 }
 
-.container-fluid{
-    padding: 3% 15% 7%;
+.white-section{
+    background-color: white;
 }
 
-h1{
-    font-family: "Montserrat", sans-serif;
+/* headings */
+
+.big-head{
     font-weight: 900;
     size: 3.5rem;
     line-height: 1.5;
 }
 
-h2{
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 3.5rem;
+.section-heading{
+    font-size: 3rem;
     line-height: 1.5;
 }
+
+/* hierarchical selectors
+hierarchy runs fro L to R.
+"all elements with class .container-fluids in #title will be like this 
+parent  child*/
+#title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+
+/* combined selectors
+
+.container.title{
+    looks for element that is in both classes
+}
+
+*/
 
 /* Navbar stuff*/
 
@@ -65,14 +93,12 @@ h2{
 
 /* Features */
 #features{
-    padding: 7% 15%;
-    background-color: white;
+   
     position: relative;
     z-index: 1;
 }
 
 .feature-item{
-    text-align: center;
     padding: 50px 18px;
 }
 
@@ -91,6 +117,7 @@ h2{
     font-weight: 900;
     font-size: 1.5rem;
 }
+
 .feature-desc{
     color: #8f8f8f;
 }
@@ -98,10 +125,7 @@ h2{
 /* testimonials */
 
 #testimonials{
-    padding: 7% 15%;
-    text-align: center;
     background-color: #ef8172;
-    color: #fff;
 }
 
 .testimonial-img{
@@ -110,10 +134,14 @@ h2{
     margin: 20px;
 }
 
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
 /* press */
 
 #press{
-    text-align: center;
     background-color: #ef8172;
     padding-bottom: 3%;
 }
@@ -123,15 +151,8 @@ h2{
     margin: 20px 20px 50px;
 }
 
-.carousel-item{
-    padding: 7% 15%;
-}
 
 /* cards */
-
-.card{
-    text-align: center;
-}
 
 #pricing{
     padding: 100px;
@@ -141,14 +162,33 @@ h2{
     padding: 3% 2%;
 }
 
-@media (max-width: 1028px){
+.price-text{
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+@media (max-width: 1028px){    
 
     #title{
         text-align: center;
     }
-    
+
     .title-image{
         position: static;
         transform: rotate(0);
     }
+}
+
+/* footer */
+
+#footer{
+    background-color: #fff;
+}
+
+.copyright{
+    color: #8f8f8f;
+}
+
+.social-icon{
+    padding: 0 10px;
 }
