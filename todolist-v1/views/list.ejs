@@ -1,0 +1,41 @@
+<!--THIS IS AN EJS TEMPLATE FILE-->
+<!--THIS ALLOWS FOR OUR JS FILE TO HANDLE THE LOGIC AND KINDA SEND OVER THE RESULT INTO HTML-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="box" id="heading">
+        <h1>
+            <%= listTitle%>
+        </h1>
+    </div>
+
+    <div class="box">
+
+        <% for(let i=0; i < newItems.length; i++){ %>
+            <div class="item">
+                <input type="checkbox">
+                <p>
+                    <%= newItems[i] %>
+                </p>
+            </div>
+            <% } %>
+
+
+
+        <form action="/" method="post" class="item"> <!-- this form action goes back to the root-->
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="list" value="<%= listTitle %>">+</button>
+        </form>
+    </div>
+</body>
+
+</html>
