@@ -21,7 +21,7 @@ const posts = [];
 app.get("/", function (req, res) {
   res.render("home", {
     homeText: homeStartingContent,
-    posts: posts
+    posts: posts,
   });
 
 });
